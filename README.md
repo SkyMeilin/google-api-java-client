@@ -1,4 +1,10 @@
-# Google APIs Client Library for Java
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.services.sqladmin.SQLAdminScopes;
+
+// ...
+
+GoogleCredential credential = GoogleCredential.fromStream(new FileInputStream("MyProject-1234.json"))
+    .createScoped(Collections.singleton(SQLAdminScopes.SQLSERVICE_ADMIN));# Google APIs Client Library for Java
 
 ## Description
 
